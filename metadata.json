@@ -1,0 +1,6 @@
+{
+  "name": "ColorCraft",
+  "description": "أداة احترافية وعصرية لتوليد لوحات الألوان وتدرجات CSS للمصممين ومطوري المواقع (ColorCraft)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
