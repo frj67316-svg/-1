@@ -3,6 +3,7 @@ import { Palette, Droplet, Hexagon, Globe } from 'lucide-react';
 import PaletteGenerator from './components/PaletteGenerator';
 import GradientGenerator from './components/GradientGenerator';
 import { useLanguage } from './context/LanguageContext';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'palettes' | 'gradients'>('palettes');
@@ -66,6 +67,7 @@ export default function App() {
       <main className="flex-1 w-full max-w-[1400px] mx-auto px-4 sm:px-6 py-8 flex flex-col h-full">
         {activeTab === 'palettes' ? <PaletteGenerator /> : <GradientGenerator />}
       </main>
+      <SpeedInsights />
     </div>
   );
 }
